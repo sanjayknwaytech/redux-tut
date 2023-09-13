@@ -1,6 +1,7 @@
 import React from 'react'
 
-const Home=(props)=>{ 
+const Home=(props)=>{
+  //  console.log(props)
     return(
         <div>
             <h2>Home Component</h2>             
@@ -11,18 +12,16 @@ const Home=(props)=>{
                 </div>
                 <div className="text-wrapper item">
                     <span>
-                        I-Phone
+                        I-Phone 15
                     </span>
                     <span>
-                        Price: $1000.00
+                        Price: $999.00
                     </span>
                 </div>
                 <div className="btn-wrapper item">
-                    <button 
-                    onClick={
-                        ()=>{props.addToCartHandler({pice:1000,name:'i phone 11'})}
-                        }>
-                        Add To Cart</button>
+                    <button    onClick={ ()=>{props.addToCartHandler({pice:999,name:'i phone 15'})} }>  Add To Cart</button>
+
+                    <button style={{marginTop: 6}}   onClick={ ()=>{props.removeToCartHandler({})} }>  Remove To Cart</button>
                 </div>
             </div>
 
