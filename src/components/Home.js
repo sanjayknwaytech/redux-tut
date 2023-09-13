@@ -7,7 +7,7 @@ const Home=(props)=>{
 
             <div className="cart-wrapper">
                 <div className="img-wrapper item">
-                    <img src="https://m.media-amazon.com/images/I/61bK6PMOC3L._AC_UF1000,1000_QL80_.jpg" />
+                    <img src="./mobile.jpg" />
                 </div>
                 <div className="text-wrapper item">
                     <span>
