@@ -72,6 +72,13 @@
     border-radius: 50%;
     color: #fff;
 }
+.cart-box
+{
+  right: 0;
+  top: 90px;
+  position: absolute;
+  margin-right: 15px;
+}
 /*  */
 
 @keyframes App-logo-spin {
