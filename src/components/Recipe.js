@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 //import { addShipping } from './actions/cartActions'
+import { ADD_SHIPPING ,SUB_SHIPPING} from './actions/action-types/cart-actions'
 class Recipe extends Component{
     
     componentWillUnmount() {
@@ -25,10 +26,10 @@ class Recipe extends Component{
                     <li className="collection-item">
                             <label>
                                 <input type="checkbox" ref="shipping" onChange= {this.handleChecked} />
-                                <span>Shipping(+6$)</span>
+                                <span>Shipping(+₹50 )</span>
                             </label>
                         </li>
-                        <li className="collection-item"><b>Total: {this.props.total} $</b></li>
+                        <li className="collection-item"><b>Total: ₹ {this.props.total} </b></li>
                     </div>
                     <div className="checkout">
                         <button className="waves-effect waves-light btn">Checkout</button>
@@ -47,8 +48,8 @@ const mapStateToProps = (state)=>{
 
 const mapDispatchToProps = (dispatch)=>{
     return{
-        addShipping: ()=>{dispatch({type: 'ADD_SHIPPING'})},
-        substractShipping: ()=>{dispatch({type: 'SUB_SHIPPING'})}
+        addShipping: ()=>{dispatch({type: ADD_SHIPPING})},
+        substractShipping: ()=>{dispatch({type: SUB_SHIPPING})}
     }
 }
 

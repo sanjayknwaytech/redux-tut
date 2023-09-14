@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.cart-count
+{  
+    color: black;
+    top: -15px;
+    position: absolute;
+    margin-left: 15px;
+    font-weight: bold; 
+}
